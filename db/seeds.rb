@@ -20,7 +20,7 @@ puts '5 skills created'
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
     subtitle: 'My Great Service',
-    body: 'Duis nec metus blandit, elementum purus at, fermentum eros. Quisque vitae auctor arcu. Aliquam rhoncus in sem dapibus laoreet. ',
+    body: 'Duis nec metus blandit, elementum purus at, fermentum eros. Quisque vitae auctor arcu. Aliquam rhoncus in sem dapibus laoreet.',
     main_image: 'https://via.placeholder.com/600x400',
     thumb_img: 'https://via.placeholder.com/350x200'
   )
