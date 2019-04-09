@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   layout 'blog'
   access all: %i[show index],
          user: {
-           except: %i[destroy new create update edit]
+           except: %i[destroy new create update edit toggle_status]
          }, site_admin: :all
 
   # GET /blogs
