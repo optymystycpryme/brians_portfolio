@@ -44,11 +44,6 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 55em;
-}
-
-
 /*
  * Header
  */
@@ -109,4 +104,26 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+ * Custom Styles
+ */
+.container {
+  max-width: 55em;
+}
+
+.card {
+  margin: 2em 0 2em 0;
+}
+.card-body {
+  color: #000;
+  text-align: left;
+}
+
+.auth-links {
+  margin-top: 1em;
+  a {
+    color: #000;
+  }
 }

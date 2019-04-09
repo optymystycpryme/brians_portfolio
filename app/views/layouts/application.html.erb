@@ -12,15 +12,17 @@
   </head>
 
   <body class="text-center">
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-
-      <%= render  "shared/application_nav" %>
-
-      <%= yield %>
-
-      <%= render  "shared/application_footer" %>
-
-      <%= source_helper('application') %>
+    <div class="container">
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      
+        <%= render  "shared/application_nav" %>
+      
+        <%= yield %>
+      
+        <%= render  "shared/application_footer" %>
+      
+        <%= source_helper('application') %>
+      </div>
     </div>
   </body>
 </html>
