@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container portfolio-container">
   <div class="row">
     <div class="col-md-7">
-      <%= image_tag @portfolio_item.main_image %>
+      <%= image_tag @portfolio_item.main_image.to_s, width: '100%' %>
       <%= link_to  "View All Portfolio Items", portfolios_path %>
     </div>
     <div class="col-md-5">
@@ -15,8 +15,7 @@
       <div class="btn-group">
         <button type="button" class="btn btn-sm btn-outline-secondary"><a
             href="https://github.com/optymystycpryme"><%= fa_icon "github" %> Github</a></button>
-        <button type="button" class="btn btn-sm btn-outline-secondary"><a href=""><%= fa_icon "code" %> View
-            Project</a></button>
+        <button type="button" class="btn btn-sm btn-outline-secondary"><a href=""><%= fa_icon "code" %> View Project</a></button>
       </div>
     </div>
   </div>

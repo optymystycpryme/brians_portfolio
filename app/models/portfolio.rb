@@ -7,6 +7,9 @@ class Portfolio < ApplicationRecord
   include Placeholder
   validates_presence_of :title, :body, :main_image, :thumb_img
 
+  mount_uploader :thumb_img, PortfolioUploader
+  mount_uploader :main_image, PortfolioUploader
+
   # Creating custom scope... Awesome!!!
   def self.react
     where(subtitle: 'React')
