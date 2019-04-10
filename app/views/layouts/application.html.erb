@@ -14,13 +14,10 @@
   <body class="text-center">
     <div class="container">
       <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      
+        <div id="background"></div>
         <%= render  "shared/application_nav" %>
-      
         <%= yield %>
-      
         <%= render  "shared/application_footer" %>
-      
         <%= source_helper('application') %>
       </div>
     </div>
