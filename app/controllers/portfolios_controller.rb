@@ -4,7 +4,7 @@ class PortfoliosController < ApplicationController
   layout 'portfolio'
   access all: %i[show index react],
          user: {
-           except: %i[destroy new create update edit]
+           except: %i[destroy new create update edit sort]
          }, site_admin: :all
 
   def index
