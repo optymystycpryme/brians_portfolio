@@ -6,7 +6,9 @@ Rails.application.routes.draw do
                 sign_out: 'logout',
                 sign_up:  'register'
               }
-  resources :portfolios, except: [:show]
+  resources :portfolios, except: [:show] do
+    put :sort, on: :collection
+  end
   get 'react-items', to: 'portfolios#react'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 

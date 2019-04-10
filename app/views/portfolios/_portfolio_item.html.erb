@@ -1,5 +1,5 @@
 <div class="col-md-4">
-  <div class="card mb-4 box-shadow">
+  <div class="card mb-4 box-shadow" data-id="<%= portfolio_item.id %>">
     <%= image_tag portfolio_item.thumb_img unless portfolio_item.thumb_img.nil? %>
     <div class="card-body">
       <span class="card-text"><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
@@ -9,7 +9,6 @@
           <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/optymystycpryme"><%= fa_icon "github" %> Github</a></button>
           <button type="button" class="btn btn-sm btn-outline-secondary"><a href=""><%= fa_icon "code" %> View Project</a></button>
         </div>
-        <small class="text-muted">9 mins</small>
       </div>
     </div>
   </div>
