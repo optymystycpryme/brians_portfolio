@@ -167,4 +167,18 @@ body {
 .background-overlay {
   background-color: rgba($color: #000000, $alpha: 0.7);
   padding: 2em;
+  border-radius: 10px;
+}
+.about-img {
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.contact-styles {
+  text-align: left;
+  p {
+    color: #ffad33;
+  }
+  a {
+    color: #ffad33;
+  }
 }
