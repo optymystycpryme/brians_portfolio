@@ -7,6 +7,20 @@
   --jumbotron-padding-y: 3rem;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Acme', sans-serif;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -46,4 +60,8 @@ footer p {
  */
 .portfolio-container {
   padding-top: 20px;
+}
+
+.nav-brand {
+  font-family: 'Acme', sans-serif;
 }

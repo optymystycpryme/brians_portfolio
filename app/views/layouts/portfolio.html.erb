@@ -3,6 +3,7 @@
 
 <head>
   <title><%= @page_title %></title>
+  <%= favicon_link_tag "favicons/favicon.ico" %>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%= csrf_meta_tags %>
@@ -10,6 +11,7 @@
   <meta name="keywords" content="<%= @seo_keywords %>" />
   <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Lato" rel="stylesheet">
 </head>
 
 <body>
@@ -20,8 +22,6 @@
   </main>
   <%= render  "shared/portfolio_footer" %>
   <%= alerts %>
-  <%= source_helper('application') %>
-
 </body>
 
 </html>
