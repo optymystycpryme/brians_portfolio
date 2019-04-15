@@ -43,3 +43,5 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 gem "gritter", "1.2.0"
 gem 'redis', '~> 4.1'
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
