@@ -232,3 +232,11 @@ body {
 .nav-brand {
   font-family: 'Acme', sans-serif;
 }
+.btn-about {
+  background-color: #08fcff;
+  color: #000;
+  text-shadow: none;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
