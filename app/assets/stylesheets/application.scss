@@ -136,13 +136,9 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
-.profile-img {
-  padding: 3em;
-}
+
 .about-paragraphs {
   text-align: justify;
-  padding-right: 3em;
-  padding-left: 3em;
 }
 
 #background {
@@ -202,8 +198,6 @@ body {
   text-shadow: none;
 }
 .about-toggle-btns {
-  padding-left: 2em;
-  padding-right: 2em;
   text-align: left;
 }
 .nav-link {
@@ -213,4 +207,11 @@ body {
 }
 .last-name {
   color: #08fcff;
+}
+.progress {
+  width: 100%;
+}
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

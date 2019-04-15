@@ -3,6 +3,18 @@
   <div class="row">
     <div class="col-md-4 profile-img">
       <%= image_tag "profile.png", width: 250, alt: "profile image", class: "about-img" %>
+      <div class="skills">
+        <% @skills.each do |skill| %>
+          <div class="skill">
+            <h4><%= skill.title %> </h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-dark" role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>%">
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
     </div>
     <div class="col-md-8">
       <p class="about-paragraphs">
@@ -18,8 +30,6 @@
         Javascript, React, and NodeJS, and I also know my way around WordPress pretty well. For more info you can get ahold
         of me via my contacts, on the contact page.
       </p>
-    </div>
-    <div class="col-md-12">
       <div class="about-toggle-btns">
         <p>
           <button class="btn about-btn" role="button" data-toggle="collapse" href="#jobHistory" aria-expanded="false"
