@@ -1,6 +1,6 @@
 <div class="album py-5 bg-light">
   <div class="container">
-    <%= link_to  "New Portfolio Item", new_portfolio_path, class: "btn btn-dark btn-block" %>
+    <%= link_to  "New Portfolio Item", new_portfolio_path, class: "btn btn-dark btn-block" if logged_in?(:site_admin) %>
     <hr>
     <%= source_helper('alert alert-warning') %>
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
