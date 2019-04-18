@@ -93,4 +93,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.require_master_key = true
+
+  config.action_cable.allowed_request_origins = ['https://bwh-portfolio.herokuapp.com/', 'http://bwh-portfolio.herokuapp.com/']
+
+  config.action_cable.url = 'wss://bwh-portfolio.herokuapp.com/cable'
 end
