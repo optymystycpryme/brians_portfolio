@@ -3,18 +3,28 @@
   <div class="row">
     <div class="col-md-4 profile-img">
       <%= image_tag "profile.png", width: 250, alt: "profile image", class: "about-img" %>
-      <div class="skills">
-        <% @skills.each do |skill| %>
-          <div class="skill">
-            <h4><%= skill.title %> </h4>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped bg-dark" role="progressbar"
-                aria-valuenow="<%= skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>%">
+      <div class="skills about-toggle-btns">
+        <p>
+          <button class="btn about-btn btn-block" role="button" data-toggle="collapse" href="#skills" aria-expanded="false"
+            aria-controls="skills">
+            Skills
+          </button>
+        </p>
+        <p>
+          <div class="collapse" id="skills">
+            <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %> </h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-dark" role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>%">
+                </div>
               </div>
             </div>
+            <% end %>
           </div>
-        <% end %>
-      </div>
+        </p>
+        </div>
     </div>
     <div class="col-md-8">
       <p class="about-paragraphs">
@@ -25,7 +35,7 @@
         I’m a huge proponent of using your spare to time to take that extra step and learn something new.
       </p>
       <p class="about-paragraphs">
-        I’m well trained Ruby on Rails developer with over a year of programming experience. I have several awesome projects
+        I’m well versed Ruby on Rails developer with over a year of programming experience. I have several awesome projects
         that can be accessed on my portfolio page. Along with Ruby, Rails, and Ruby on Rails, I like to play around with
         Javascript, React, and NodeJS, and I also know my way around WordPress pretty well. For more info you can get ahold
         of me via my contacts, on the contact page.
@@ -44,20 +54,26 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              WordPress Developer, Webpartnerr.com, October 2018 to present.
             </div>
             <div class="card card-block">
-              Job 2
+              Technician, Global Data Services, October 2016 to May 2018
+            </div>
+            <div class="card card-block">
+              Administrative Assistant, That Paralegal Place, November 2012 to September 2016
             </div>
           </div>
         </p>
         <p>
           <div class="collapse" id="education">
             <div class="card card-block">
-              Education 1
+              Tech Talent South Immersive Coding Bootcamp, Studied Ruby on Rails, Javascript and the fundamentals of programming and web design.
             </div>
             <div class="card card-block">
-              Education 2
+              South West Institute of Healing Arts, Studied Life Coaching and Holistic Nutrition.
+            </div>
+            <div class="card card-block">
+              Glendale Community College, Studied mathematics, philosophy and psychology.
             </div>
           </div>
         </p>
