@@ -8,6 +8,8 @@ class Portfolio < ApplicationRecord
                                 }
 
   validates_presence_of :title, :body
+  validates :url, :format => URI::regexp(%w(http https))
+  validates :github, :format => URI::regexp(%w(http https))
 
   mount_uploader :thumb_img, PortfolioUploader
   mount_uploader :main_image, PortfolioUploader
