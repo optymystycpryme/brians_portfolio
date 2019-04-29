@@ -3,6 +3,12 @@
   <div class="row">
     <div class="col-md-4 profile-img">
       <%= image_tag "profile.png", width: 250, alt: "profile image", class: "about-img" %>
+      <div class="social-links row">
+        <ol class="list-unstyled social-links col-lg-12 col-xs-12">
+          <li><a href="https://github.com/optymystycpryme"><%= fa_icon "github" %></a></li>
+          <li><a href="https://www.linkedin.com/in/optymystycpryme/"><%= fa_icon "linkedin" %></a></li>
+        </ol>
+      </div>
       <div class="skills about-toggle-btns">
         <p>
           <button class="btn about-btn btn-block" role="button" data-toggle="collapse" href="#skills" aria-expanded="false"
@@ -28,10 +34,8 @@
     </div>
     <div class="col-md-8">
       <p class="about-paragraphs">
-        Hey there, thank you for stopping by. Incase you didn’t
-        catch it, my name is Brian, I live in Arizona, and I build beautiful websites, front to back.
-        I’m a passionate Ruby on Rails developer with over a year of programming experience. I have several awesome projects
-        that can be accessed on my <%= link_to  "portfolio", portfolios_path, class: "about-links" %> page. Along with Ruby on Rails, I love Javascript and like to play around with React, and NodeJS. For more info you can get ahold
+        Hey there, thank you for stopping by. My name is Brian, I live in Arizona, and I build beautiful websites, front to back.
+        I’m a passionate Ruby on Rails developer with over a year of programming experience. To see some projects, click here -> <%= link_to  "portfolio", portfolios_path, class: "about-links" %> page. In addition to Ruby on Rails, I like to play around with React and NodeJS. For more info you can get ahold
         of me via the <%= link_to  "contact", contact_path, class: "about-links" %> page.
       </p>
       <p class="about-paragraphs">
@@ -69,10 +73,10 @@
               Tech Talent South Immersive Coding Bootcamp, Studied Ruby on Rails, Javascript and the fundamentals of programming and web design.
             </div>
             <div class="card card-block">
-              South West Institute of Healing Arts, Studied Life Coaching and Holistic Nutrition.
+              Udemy - Rails Courses - Dissecting Ruby on Rails 5 and The Complete Ruby on Rails Developer Course
             </div>
             <div class="card card-block">
-              Glendale Community College, Studied mathematics, philosophy and psychology.
+              South West Institute of Healing Arts, Studied Life Coaching and Holistic Nutrition.
             </div>
           </div>
         </p>

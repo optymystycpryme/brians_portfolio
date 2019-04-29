@@ -11,7 +11,7 @@ h1, .h1
 h2, .h2
 h3, .h3
 h4, .h4 {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Wendy One', sans-serif;
 }
 
 h5, .h5,
@@ -178,10 +178,17 @@ body {
   color: #fff;
 }
 .background-overlay {
-  background-color: rgba($color: #000000, $alpha: 0.7);
+  background-color: rgba($color: #000000, $alpha: 0.9);
   padding: 1em;
-  margin-top: 2em;
-  border-radius: 10px;
+  margin-bottom: -1em;
+  margin-right: -1em;
+}
+.outer-cover-div {
+  margin-left: -1em;
+  border-left: solid $highlight-text 3px;
+  border-top: solid $highlight-text 3px;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 .about-img {
   border-radius: 10px;
@@ -218,6 +225,7 @@ body {
   text-align: left;
 }
 .nav-link {
+  transition: color 1s;
   &:hover {
     color: $highlight-text !important;
   }
@@ -234,14 +242,18 @@ body {
 }
 
 .nav-brand {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 35px;
 }
 .btn-about {
   background-color: $highlight-text;
   color: #000;
   text-shadow: none;
+  box-shadow: 8px 8px rgba($highlight-text, 0.0);
+  transition: box-shadow 2s;
+  border-radius: 0;
   &:hover {
-    transform: scale(1.1);
+    box-shadow: -4px -4px rgba(255, 255, 255, 1.0);
   }
 }
 
@@ -251,4 +263,16 @@ body {
 
 .about-links {
   color: $highlight-text;
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: -5px;
+  ol li {
+    text-align: center;
+    display: inline;
+    font-size: 7vh;
+    margin-right: 25px;
+    margin-left: 10px;
+  }
 }
