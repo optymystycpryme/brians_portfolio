@@ -2,6 +2,7 @@
 @import "font-awesome";
 @import "jquery-ui";
 @import "gritter";
+@import "config";
 
 :root {
   --jumbotron-padding-y: 3rem;
@@ -15,10 +16,23 @@ body {
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4,
+h4, .h4 {
+  font-family: 'Acme', sans-serif;
+}
+
 h5, .h5,
 h6, .h6 {
-  font-family: 'Acme', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.album {
+  background: #000 !important;
+}
+
+.navbar-brand {
+  margin-bottom: -5px;
+  margin-top: 5px;
 }
 
 .jumbotron {
@@ -67,7 +81,7 @@ footer p {
 }
 
 .link-btns a {
-  background-color: #08fcff;
+  background-color: $highlight-text;
   color: #000;
 }
 

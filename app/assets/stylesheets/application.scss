@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+@import "config";
 
 /*
  * Globals
@@ -9,10 +10,13 @@
 h1, .h1
 h2, .h2
 h3, .h3
-h4, .h4
-h5, .h5
-h6, .h6 {
+h4, .h4 {
   font-family: 'Acme', sans-serif;
+}
+
+h5, .h5,
+h6, .h6 {
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -186,23 +190,23 @@ body {
 .contact-styles {
   text-align: left;
   p {
-    color: #08fcff;
+    color: $highlight-text;
   }
   a {
-    color: #08fcff;
+    color: $highlight-text;
     &:hover {
-      color: #00c9cc;
+      color: $highlight-text;
     }
   }
 }
 
 .about-btn {
   margin-top: 10px;
-  background-color: #08fcff;
+  background-color: $highlight-text;
   color: #000;
   &:hover {
     color: #000!important;
-    background-color: #00c9cc;
+    background-color: $highlight-text;
   }
 }
 .card-block {
@@ -215,11 +219,11 @@ body {
 }
 .nav-link {
   &:hover {
-    color: #08fcff !important;
+    color: $highlight-text !important;
   }
 }
 .last-name {
-  color: #08fcff;
+  color: $highlight-text;
 }
 .progress {
   width: 100%;
@@ -233,7 +237,7 @@ body {
   font-family: 'Acme', sans-serif;
 }
 .btn-about {
-  background-color: #08fcff;
+  background-color: $highlight-text;
   color: #000;
   text-shadow: none;
   &:hover {
@@ -246,5 +250,5 @@ body {
 }
 
 .about-links {
-  color: #08fcff;
+  color: $highlight-text;
 }
