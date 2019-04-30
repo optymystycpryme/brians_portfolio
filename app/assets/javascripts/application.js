@@ -25,3 +25,7 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+$(document).ready(function () {
+  $('.btn-about').tooltip({ title: "ABOUT BRIAN!!!", trigger: "hover", delay: 1000});
+});
